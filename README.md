@@ -29,7 +29,7 @@ Create a directory of json files extracted from `.alc` files.
 
     # Extract an save to a directory.
     output_path = 'C:/Users/USERNAME/ALC_JSON' # Example output path.
-    make_json_dir(paths, output_path)
+    make_json_dir(alc_folder_path, output_path)
 
 # Usage
 
