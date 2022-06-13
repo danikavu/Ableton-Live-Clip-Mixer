@@ -4,7 +4,7 @@ This module generates drum patterns from a random selection of Ableton Live Clip
 Ableton Live Clip files can be found [here](https://www.ableton.com/en/packs/#?item_type=sounds), in packs such as `Skitter and Step` etc.
 
 While this could be done based on midi files, Ableton Live Clip drum kit setups are standardized and have some fire grooves. 
-So by combining them you can get extra fire.
+So by combining them you can get extra fire sauce ideas.
 
 # Installation
 
@@ -40,10 +40,9 @@ Generate drum pattern midi clips from a randomized mix of Ableton Live Clips.
     # Directory of generated json files in example above.
     json_dir = 'C:/Users/USERNAME/ALC_JSON'
 
+    # Set output path. Optional
+    midi_path = 'C:/Users/USERNAME/alc_generated_midi' # Example output path. Personally I import this folder to Ableton.
+
     # Generate midi file.
-    generate_pattern(json_dir, fname='alcmixer_midi', bars=4, fills=True)
-
-
-
-
+    generate_pattern(json_dir, out_path=midi_path, fname='alcmixer_midi', bars=4, fills=True)
 
