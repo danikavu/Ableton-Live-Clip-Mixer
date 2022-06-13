@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
 	name='alcmixer',
-	version='0.1.0',
+	version='0.1.1',
 	author='Daniel Kavoulakos',
 	author_email='dan_kavoulakos@hotmail.com',
 	description='Create midi drum patterns by randomly combining multiple Ableton Live Clips',

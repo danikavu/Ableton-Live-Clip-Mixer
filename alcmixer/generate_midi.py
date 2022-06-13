@@ -33,7 +33,7 @@ def generate_pattern(json_dirs, out_path=None, fname='python_als_gen_def_test', 
         for fill in range(fill_kits):
             fkits = [SYS_RAND.choice(jsons) for x in range(16)]
             for n, rando in enumerate(fkits, start=36):
-                with open(f'{json_dirs}{os.sep}{rando}', 'r') as f:
+                with open(f'{json_dirs}{os.sep}{rando}', 'r', encoding="utf8") as f:
                     array = json.load(f)
                 _notes = array['{}'.format(n)]
                 if _notes:
@@ -46,7 +46,7 @@ def generate_pattern(json_dirs, out_path=None, fname='python_als_gen_def_test', 
             bar += 2
     # Create midi sequence from kits.
     for n, rando in enumerate(random_kits, start=36):
-        with open(f'{json_dirs}{os.sep}{rando}', 'r') as f:
+        with open(f'{json_dirs}{os.sep}{rando}', 'r', encoding="utf8") as f:
             array = json.load(f)
         _notes = array['{}'.format(n)]
         if _notes:
