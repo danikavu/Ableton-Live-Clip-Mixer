@@ -8,7 +8,7 @@ from note_seq.protobuf import music_pb2
 SYS_RAND = random.SystemRandom()
 
 
-def generate_pattern(json_dirs, out_path=None, fname='python_als_gen_def_test.mid', bars=1, fills=False):
+def generate_pattern(json_dirs, out_path=None, fname='python_als_gen_def_test', bars=1, fills=False):
     """
         Generates a midi pattern from 16 random kits.
         Additional option to add fills at the end of every 2 bars.
@@ -68,6 +68,6 @@ def generate_pattern(json_dirs, out_path=None, fname='python_als_gen_def_test.mi
                                                     velocity=int(float(_m_note[2])))
                     bar += 1
     # Export path.
-    exp_path = out_path + os.sep + fname if out_path else fname
+    exp_path = out_path + os.sep + fname + '.mid' if out_path else fname + '.mid'
     # Export midi file.
     note_seq.sequence_proto_to_midi_file(midi_outp, exp_path)

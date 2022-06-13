@@ -19,7 +19,7 @@ def make_json_dir(directory, out_path):
             print(f'Failed for {alc_file}\nWith Exception : {e}')
 
 
-def alc_path(folder, kit=True):
+def alc_folder_path(folder, kit=True):
     """
         Returns a list of all `.alc` filepaths from a given directory.
     :param kit: If True will only return paths that contain `KIT` in filename. (Drumkits)
