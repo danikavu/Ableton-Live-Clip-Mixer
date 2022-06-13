@@ -8,6 +8,7 @@ setup(
 	description='Create midi drum patterns by randomly combining multiple Ableton Live Clips',
 	license='MIT',
 	packages=['.alcmixer'],
+	url = 'https://github.com/danikavu/Ableton-Live-Clip-Mixer',
 	install_requires=[
 		'note_seq',
 		'beautifulsoup4',
